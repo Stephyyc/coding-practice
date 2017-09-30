@@ -32,17 +32,14 @@ print Yes if he can replicate his ransom note exactly using whole words from the
 
 using namespace std;
 
-bool ransom_note(vector<string> magazine, vector<string> ransom) {
-    
-    int debug_count = 0; 
+bool ransom_note(vector<string> magazine, vector<string> ransom) {    
     
     map<string,int> my_map;
     for (int j = 0; j < magazine.size(); j++) {
         string magazine_word = magazine[j];
         
         if (my_map.count(magazine_word) > 0) {
-            my_map[magazine_word] = my_map[magazine_word]+1;
-            debug_count++;
+            my_map[magazine_word] = my_map[magazine_word]+1;      
         }
         else
             my_map[magazine_word] = 1;
