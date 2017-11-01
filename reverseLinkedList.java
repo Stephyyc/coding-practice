@@ -1,21 +1,12 @@
 import java.io.*;
 import java.util.*;
 
-/*
- * To execute Java, please define "static void main" on a class
- * named Solution.
- *
- * If you need more classes, simply define them inline.
- *
- * 
- */
-
 class Node {
   public Node next;
   public int data;
 }
 
-class Solution {
+class LinkedList {
   
   public static Node reverseList(Node head) {
     
